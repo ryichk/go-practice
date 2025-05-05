@@ -28,6 +28,11 @@ Example:
 - Process ID attached on the server side for tracing purpose
 - etc...
 
+## Practical context usage
+
+- context should be explicitly passed as a function argument, rather than in a structure field.
+- If a function argument has a context, but you are not sure if the function is context-aware, pass `context.TODO` instead of `nil`.
+
 ## Reference
 
 - https://zenn.dev/hsaki/books/golang-context/viewer/done
